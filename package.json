@@ -12,7 +12,8 @@
   "author": "Hugo Osvaldo Barrera",
   "license": "MIT",
   "dependencies": {
-    "nan": "^2.14.2"
+    "nan": "^2.14.2",
+    "tree-sitter-json": "^0.16.0"
   },
   "devDependencies": {
     "tree-sitter-cli": "^0.18.1"
