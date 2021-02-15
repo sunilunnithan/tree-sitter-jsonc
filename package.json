@@ -1,0 +1,23 @@
+{
+  "name": "tree-sitter-jsonc",
+  "version": "0.1.0",
+  "description": "JSONC grammar for tree-sitter",
+  "main": "index.js",
+  "keywords": [
+    "tree-sitter",
+    "parser",
+    "jsonc"
+  ],
+  "author": "Hugo Osvaldo Barrera",
+  "license": "MIT",
+  "dependencies": {
+    "nan": "^2.14.2"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.18.1"
+  },
+  "scripts": {
+    "build": "tree-sitter generate && node-gyp build",
+    "test": "tree-sitter test"
+  }
+}
