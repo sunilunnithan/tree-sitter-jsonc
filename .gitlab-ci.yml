@@ -1,0 +1,6 @@
+tests:
+  image: node:latest
+  before_script:
+    - yarn install
+  script:
+    - yarn test
