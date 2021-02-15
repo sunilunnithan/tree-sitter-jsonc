@@ -1,6 +1,6 @@
 {
   "name": "tree-sitter-jsonc",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "JSONC grammar for tree-sitter",
   "homepage": "https://gitlab.com/WhyNotHugo/tree-sitter-jsonc",
   "main": "index.js",
