@@ -95,4 +95,34 @@ Comment in object
     (comment)
     (pair (string (string_content)) (number))
     ))
-  
+
+======================
+Comment outside object
+======================
+
+// I'm a comment
+
+{
+  "foo": "bar"
+}
+
+---
+
+(document
+  (comment)
+  (object (pair (string (string_content)) (string (string_content)))))
+
+
+====================
+Comment inside array
+====================
+
+[
+  // Comment
+  "one"
+]
+
+---
+
+(document
+  (array (comment) (string (string_content))))

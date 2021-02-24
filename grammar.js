@@ -3,20 +3,10 @@ const json = require("tree-sitter-json/grammar");
 module.exports = grammar(json, {
   name: "jsonc",
 
-  extras: ($) => [/\s/, $.comment],
+  extras: ($, original) => [...original, $.comment],
 
   rules: {
-    _value: ($) =>
-      choice(
-        $.object,
-        $.array,
-        $.number,
-        $.string,
-        $.true,
-        $.false,
-        $.null,
-        $.comment
-      ),
+    document: ($, original) => optional(original),
 
     comment: ($) =>
       token(
