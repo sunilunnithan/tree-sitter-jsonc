@@ -2,8 +2,16 @@
   "name": "jsonc",
   "rules": {
     "document": {
-      "type": "SYMBOL",
-      "name": "_value"
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "_value"
+        },
+        {
+          "type": "BLANK"
+        }
+      ]
     },
     "_value": {
       "type": "CHOICE",
@@ -35,10 +43,6 @@
         {
           "type": "SYMBOL",
           "name": "null"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "comment"
         }
       ]
     },
